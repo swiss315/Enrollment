@@ -12,6 +12,10 @@
   align-self: center;
 }
 
+.split {
+  display: flex ;
+}
+
 .enroll-form {
   width: 55%;
 }
@@ -100,6 +104,10 @@
 
 .enroll-form {
   width: 100%;
+}
+
+.split {
+  display: block;
 }
 
 .enroll-image > svg {

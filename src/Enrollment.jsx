@@ -11,7 +11,7 @@ function Enrollment() {
                 <Logo />
                 {/* <button className="button">Contact Us</button> */}
             </div>
-            <div className="d-flex justify-content-between d-md-block">
+            <div className=" justify-content-between split">
                 <div className="enroll-image">
                     <FormLogo />
                 </div>
