@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+.button {
+  border: 0px;
+  border-radius: 8px;
+  font-weight: 700;
+  height: fit-content;
+  padding: 0.75rem 1.5rem;
+  align-self: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.enroll-image {
+  width: 40%;
+  align-self: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.enroll-form {
+  width: 55%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.enroll-image > svg {
+  width: 100%;
+}
+
+.form-container {
+  background-color: #0a6e3fe0;
+  padding: 1.5rem;
+  /* height: 100vh; */
+}
+
+.form-group {
+  box-shadow: 0px 4px 17px 0px rgba(11, 34, 57, 0.10);
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  /* margin: -2rem 0rem; */
+}
+
+.input-group {
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.input-group > div > label {
+  display: block;
+  text-transform: capitalize;
+  padding-bottom: 0.25rem;
+}
+
+.input-group > div {
+  width: 47%;
+}
+
+.input-group > div > input, .input-group > div > select, .input-group > div > textarea {
+  width: 100%;
+  background-color: #e2f5ec;
+    border: 0;
+    border-radius: 4px;
+    width: -webkit-fill-available;
+    height: 40px;
+    padding: 10px 15px;
+}
+
+.create-button {
+  border: 0;
+  border-radius: 8px;
+  background-color: #131b47;
   color: white;
+  font-weight: 600;
+  padding: 10px 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+#freepik--floor--inject-8, #freepik--Shadow--inject-8 {
+  fill: #e2f5ec !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.enrol-header {
+  display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+ 
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  .input-group > div > label {
+    font-size: 13px;
+}
+
+.input-group > div > input, .input-group > div > select, .input-group > div > textarea {
+  font-size: 13px;
+  height: 35px;
+}
+}
+
+@media only screen and (max-width: 912px) {
+  .enroll-image {
+    width: 100%;
+    text-align: center;
+}
+
+.enroll-form {
+  width: 100%;
+}
+
+.enroll-image > svg {
+  width: 50%;
+}
+  
+.enrol-header {
+  display: block;
+  padding: 1rem 0rem;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.form-group {
+  margin: 3rem 0rem;
+}
+}
+
+@media only screen and (max-width: 820px) {
+  .enroll-image {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .enroll-form {
+    width: 100%;
   }
+
+  .enrol-header {
+    font-weight: 600;
+    color: #131b47;
+    padding: 1rem 0rem;
+  }
+
+  .form-container {
+    height: 100vh;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .enroll-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    height: 100%;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  .input-group > div {
+    width: 100%;
+}
+
+.input-group {
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
 }
